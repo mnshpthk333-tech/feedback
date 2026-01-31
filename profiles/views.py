@@ -19,7 +19,7 @@ class CreateProfileView(View):
         Submitted_form=ProfileForm(request.POST, request.FILES)
 
         if Submitted_form.is_valid():
-            store_file(request.FILES["image"])
+            store_file(request.FILES["user_image"])
             return HttpResponseRedirect("/profiles")
         else:
             return render(request, "profiles/profiles.html", {"form": Submitted_form}) 
