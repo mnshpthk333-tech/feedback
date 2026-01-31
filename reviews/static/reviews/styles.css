@@ -68,3 +68,11 @@ button:active{
 .errors label{
     color:red
 }
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
